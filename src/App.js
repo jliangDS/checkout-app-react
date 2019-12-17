@@ -1,8 +1,8 @@
 import React from 'react';
 import {StripeProvider} from 'react-stripe-elements';
-import CardForm from './components/CardForm';
-import Checkout from './components/Checkout';
-import Pricing from './components/Pricing';
+import MyCardForm from './components/MyCardForm';
+import MyStoreCheckout from './components/MyStoreCheckout';
+import MyPricing from './components/MyPricing';
 import './App.css';
 
 class App extends React.Component {
@@ -44,9 +44,9 @@ class App extends React.Component {
       <StripeProvider apiKey="pk_test_kQmNCX01JOkO75Vkrm66CyUv00CDtR3bfr">
         <div>
           {page}
-          <CardForm />
-          <Checkout />
-          <Pricing />
+          <MyPricing />
+          <MyCardForm />
+          <MyStoreCheckout />
         </div>
       </StripeProvider>
     );
