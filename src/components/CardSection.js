@@ -8,7 +8,8 @@ class CardSection extends React.Component {
                 <p>4242 4242 4242 4242</p>
                 <label>
                     Card Details
-                    <CardElement />
+                    {/* remove hidePostalCode */}
+                    <CardElement hidePostalCode={true}/>
                 </label>
             </div>
         )
